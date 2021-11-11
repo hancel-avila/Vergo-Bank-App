@@ -22,14 +22,6 @@ export default function App() {
     </NavigationContainer>
   );
 }
-// export default function App() {
-//   return (
-//     <View style={styles.container}>
-//       <Text>oli!</Text>
-//       <StatusBar style="auto" />
-//     </View>
-//   );
-// }
 
 const styles = StyleSheet.create({
   container: {
