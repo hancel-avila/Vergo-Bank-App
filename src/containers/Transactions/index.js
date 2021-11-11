@@ -1,8 +1,10 @@
 import React from "react";
-import { View, Text } from "react-native";
+import AntIcon from "react-native-vector-icons/AntDesign";
+import { colors } from "../../library/constants/colors";
 import {
   StyledBalanceTitle,
   MainContainer,
+  BackIcon,
   StyledCard,
   StyledCardNumber,
   StyledMainTitle,
@@ -16,16 +18,20 @@ import {
   StyledTransactionDetailsContainer,
   StyledGreet,
   StyledClientName,
+  UpperSectionContainer,
 } from "./styledComponents";
 
 export const Transactions = () => {
   return (
     <MainContainer>
+      <UpperSectionContainer>
+        <BackIcon>
+          <AntIcon name="left" color={colors.dark} size={30} />
+        </BackIcon>
+      </UpperSectionContainer>
       <StyledMainTitle>Transactions</StyledMainTitle>
-      <StyledGreet>
-        Hello,
-        <StyledClientName> Client</StyledClientName>
-      </StyledGreet>
+      <StyledGreet>Good Evening</StyledGreet>
+      <StyledClientName>Hancel Ávila</StyledClientName>
       <StyledCard>
         <StyledBalanceTitle>Balance</StyledBalanceTitle>
         <StyledCardNumber>$3,000</StyledCardNumber>

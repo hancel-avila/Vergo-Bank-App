@@ -8,37 +8,46 @@ export const MainContainer = styled.SafeAreaView`
   background-color: ${colors.white};
 `;
 
+export const UpperSectionContainer = styled.View`
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-start;
+`;
+
+export const BackIcon = styled.View`
+  justify-content: flex-end;
+  margin: 2%;
+`;
+
 export const StyledMainTitle = styled.Text`
   position: absolute;
-  margin-top: 3%;
-  margin-left: 172px;
+  margin-top: 8%;
   font-size: 20px;
   color: ${colors.dark};
   font-weight: 700;
 `;
 
 export const StyledGreet = styled.Text`
-  position: absolute;
+  /* position: absolute; */
   align-self: flex-start;
   padding-left: 20px;
-  margin-top: 12%;
+  margin-top: 5%;
   font-size: 18px;
   color: ${colors.dark};
   font-weight: 200;
 `;
 
 export const StyledClientName = styled.Text`
-  position: absolute;
   align-self: flex-start;
   padding-left: 20px;
   text-align: left;
   font-size: 18px;
-  color: ${colors.dark};
+  color: ${colors.light_gray};
   font-weight: 200;
 `;
 
 export const StyledCard = styled.View`
-  margin: 20% auto;
+  margin: 7% auto;
   height: 22%;
   width: 85%;
   border-radius: 18px;
@@ -76,7 +85,7 @@ export const AllTransactionsContainer = styled.View`
 export const StyledSubtitle = styled.Text`
   align-self: flex-start;
   text-align: left;
-  margin-top: -40px;
+  margin-top: 0px;
   margin-bottom: 2%;
   margin-left: 20px;
   font-size: 18px;
