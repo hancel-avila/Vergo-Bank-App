@@ -1,11 +1,11 @@
 import styled from "styled-components/native";
-import { colors } from "../../library/constants/colors";
+import { colors } from "../../../library/constants/colors";
 
 export const MainContainer = styled.SafeAreaView`
   display: flex;
   flex: 1;
   align-items: center;
-  background-color: ${colors.white};
+  background-color: ${colors.light_blue};
 `;
 
 export const UpperSectionContainer = styled.View`
@@ -28,13 +28,12 @@ export const StyledMainTitle = styled.Text`
 `;
 
 export const StyledGreet = styled.Text`
-  /* position: absolute; */
   align-self: flex-start;
   padding-left: 20px;
   margin-top: 5%;
   font-size: 18px;
   color: ${colors.dark};
-  font-weight: 200;
+  font-weight: 700;
 `;
 
 export const StyledClientName = styled.Text`
@@ -42,8 +41,8 @@ export const StyledClientName = styled.Text`
   padding-left: 20px;
   text-align: left;
   font-size: 18px;
-  color: ${colors.light_gray};
-  font-weight: 200;
+  color: ${colors.medium_gray};
+  font-weight: 700;
 `;
 
 export const StyledCard = styled.View`
@@ -51,7 +50,7 @@ export const StyledCard = styled.View`
   height: 22%;
   width: 85%;
   border-radius: 18px;
-  background-color: ${colors.orange};
+  background-color: ${colors.purlpe};
   justify-content: center;
 `;
 
@@ -79,7 +78,7 @@ export const AllTransactionsContainer = styled.View`
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  background-color: greenyellow;
+  background-color: ${colors.white};
 `;
 
 export const StyledSubtitle = styled.Text`
@@ -90,7 +89,7 @@ export const StyledSubtitle = styled.Text`
   margin-left: 20px;
   font-size: 18px;
   color: ${colors.dark};
-  font-weight: 400;
+  font-weight: 700;
 `;
 
 export const StyledTransactionContainer = styled.View`
@@ -98,6 +97,7 @@ export const StyledTransactionContainer = styled.View`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  border: 1px solid ${colors.gray};
   margin-top: 10px;
   margin-bottom: 10px;
   height: 10%;

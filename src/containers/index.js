@@ -1,1 +1,1 @@
-export { Transactions } from "./Transactions";
+import { TransactionsMainScreen } from "./Transactions/TransactionsMainScreen";
